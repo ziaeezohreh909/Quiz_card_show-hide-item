@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Benz2024",
+      "price": "$1000",
+      "img": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1440",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": "2",
+      "name": "i302022",
+      "price": "$6000",
+      "img": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2019/11/2020corvettesingrayreveal017.jpg?quality=90&strip=all&w=375&h=211&sig=wC6c81TjldhXB0KvLJr-Sw",
+      "info": " Autem incidunt cupiditate nulla reiciendis cum quo vel distinctio eius modi asperiores, veniam, minima repellat expedita vitae ab atque, sit sequi facere."
+    },
+    {
+      "id": "3",
+      "name": "207i",
+      "price": "$2000",
+      "img": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2020/01/corvette.jpg?w=288&crop=1&strip=all&quality=90&sig=bYXuTtJqk0lGwtJ95h3COg",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": "4",
+      "name": "208i",
+      "price": "$7000",
+      "img": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2020/01/corvette.jpg?w=288&crop=1&strip=all&quality=90&sig=bYXuTtJqk0lGwtJ95h3COg",
+      "info": " Autem incidunt cupiditate nulla reiciendis cum quo vel distinctio eius modi asperiores, veniam, minima repellat expedita vitae ab atque, sit sequi facere."
+    },
+    {
+      "id": "5",
+      "name": "i30-2024",
+      "price": "$9000",
+      "img": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2019/11/2020corvettesingrayreveal017.jpg?quality=90&strip=all&w=375&h=211&sig=wC6c81TjldhXB0KvLJr-Sw",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+      "id": "6",
+      "name": "i50-2023",
+      "price": "$9000",
+      "img": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2019/11/2020corvettesingrayreveal017.jpg?quality=90&strip=all&w=375&h=211&sig=wC6c81TjldhXB0KvLJr-Sw",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
