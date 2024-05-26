@@ -6,7 +6,6 @@ export default function Products() {
   const [product, setProduct] = useState<carType>();
   const { id } = useParams();
   useEffect(() => {
-    console.log("id=" + id);
     getProductsApiById(id!).then((data) => {
       setProduct(data);
     });

@@ -41,7 +41,7 @@ export default function Product() {
         <div className="m-12 grid grid-cols-3 gap-3">
           {cars.map((car: carType, index: number) => {
             return (
-              <Link to={"/products/" + car.id}>
+              <Link to={`/products/${car.id}`}>
                 <div
                   className="flex flex-col border p-3 bg-blue-200 rounded-md gap-3"
                   key={car.id}
