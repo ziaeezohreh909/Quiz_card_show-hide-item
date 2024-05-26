@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface carType {
   id: number;
@@ -12,6 +13,7 @@ interface carType {
 
 export default function Product() {
   const [cars, setCars] = useState<carType[]>([]);
+
   const [error, setError] = useState<string>("");
   useEffect(() => {
     async function getData() {
@@ -39,23 +41,25 @@ export default function Product() {
         <div className="m-12 grid grid-cols-3 gap-3">
           {cars.map((car: carType, index: number) => {
             return (
-              <div
-                className="flex flex-col border p-3 bg-blue-200 rounded-md gap-3"
-                key={car.id}
-              >
-                <img src={car.img} alt="" className="rounded-md h-32" />
-                <div className="font-semibold text-xl ">{car.name}</div>
-                {car.isOpen && (
-                  <div className="h-42 font-serif">{car.info}</div>
-                )}
-                <div className="font-bold">{car.price}</div>
-                <button
-                  className="bg-blue-800 text-white rounded-md text-xs p-1"
-                  onClick={() => toggleItem(index)}
+              <Link to={"/products/" + car.id}>
+                <div
+                  className="flex flex-col border p-3 bg-blue-200 rounded-md gap-3"
+                  key={car.id}
                 >
-                  {car.isOpen ? "Hide items" : "Show items"}
-                </button>
-              </div>
+                  <img src={car.img} alt="" className="rounded-md h-32" />
+                  <div className="font-semibold text-xl ">{car.name}</div>
+                  {car.isOpen && (
+                    <div className="h-42 font-serif">{car.info}</div>
+                  )}
+                  <div className="font-bold">{car.price}</div>
+                  <button
+                    className="bg-blue-800 text-white rounded-md text-xs p-1"
+                    onClick={() => toggleItem(index)}
+                  >
+                    {car.isOpen ? "Hide items" : "Show items"}
+                  </button>
+                </div>
+              </Link>
             );
           })}
         </div>
