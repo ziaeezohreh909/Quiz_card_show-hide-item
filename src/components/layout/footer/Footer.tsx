@@ -18,6 +18,7 @@ export default function Footer() {
         <li>
           <img src={twiiter} alt="twiiter" className="w-5 h-5 rounded-full" />
         </li>
+        <li>about us</li>
       </ul>
     </footer>
   );
